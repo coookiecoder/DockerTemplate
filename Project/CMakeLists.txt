@@ -3,4 +3,4 @@ project(DockerTemplate)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(DockerTemplate main.cpp Server.cpp Server.hpp)
+add_executable(DockerTemplate main.cpp)
