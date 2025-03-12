@@ -1,18 +1,12 @@
 services:
-  Dev:
+  DevTemplate:
     image: dev:latest
     build:
       context: .
       dockerfile: dev_docker/Dockerfile
-    ports:
-      - "2080:80"
-      - "2443:443"
 
-  Release:
+  ReleaseTemplate:
     image: release:latest
     build:
       context: .
       dockerfile: release_docker/Dockerfile
-    ports:
-      - "1080:80"
-      - "1443:443"
